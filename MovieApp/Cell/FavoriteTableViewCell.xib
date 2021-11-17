@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="254" id="KGk-i7-Jjw" customClass="FavoriteTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-wa-TLV">
+                        <rect key="frame" x="5" y="5" width="310" height="244"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMovieImg" translatesAutoresizingMaskIntoConstraints="NO" id="e4M-Iv-kbp">
+                                <rect key="frame" x="10" y="10" width="290" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bmN-d1-U3H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKa-Ft-NDk">
+                                <rect key="frame" x="20" y="220" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Rg0-Xp-v5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-yj-dt5">
+                                <rect key="frame" x="20" y="251" width="35" height="16"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-iS-GOG">
+                                <rect key="frame" x="256" y="229" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urT-gt-1s5">
+                                <rect key="frame" x="269" y="230" width="21" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMBd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqL-GT-5OV">
+                                <rect key="frame" x="215" y="230" width="36" height="19"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.069688239065157309" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XqL-GT-5OV" firstAttribute="centerY" secondItem="urT-gt-1s5" secondAttribute="centerY" id="2bI-rb-SJt"/>
+                            <constraint firstItem="OKa-Ft-NDk" firstAttribute="leading" secondItem="2hh-wa-TLV" secondAttribute="leading" constant="20" id="Efs-4V-Ncz"/>
+                            <constraint firstItem="IGH-yj-dt5" firstAttribute="leading" secondItem="2hh-wa-TLV" secondAttribute="leading" constant="20" id="I8V-Lz-ZC6"/>
+                            <constraint firstItem="jcc-iS-GOG" firstAttribute="leading" secondItem="XqL-GT-5OV" secondAttribute="trailing" constant="5" id="L14-im-zBX"/>
+                            <constraint firstItem="e4M-Iv-kbp" firstAttribute="leading" secondItem="2hh-wa-TLV" secondAttribute="leading" constant="10" id="MPk-kg-goc"/>
+                            <constraint firstItem="e4M-Iv-kbp" firstAttribute="top" secondItem="2hh-wa-TLV" secondAttribute="top" constant="10" id="ORn-ur-IdY"/>
+                            <constraint firstItem="urT-gt-1s5" firstAttribute="leading" secondItem="jcc-iS-GOG" secondAttribute="trailing" constant="5" id="R4z-8L-SaS"/>
+                            <constraint firstAttribute="trailing" secondItem="urT-gt-1s5" secondAttribute="trailing" constant="20" id="Uhq-rU-YF8"/>
+                            <constraint firstAttribute="trailing" secondItem="e4M-Iv-kbp" secondAttribute="trailing" constant="10" id="aKJ-uF-zQX"/>
+                            <constraint firstItem="urT-gt-1s5" firstAttribute="top" secondItem="e4M-Iv-kbp" secondAttribute="bottom" constant="20" id="aUX-mU-isO"/>
+                            <constraint firstItem="IGH-yj-dt5" firstAttribute="top" secondItem="OKa-Ft-NDk" secondAttribute="bottom" constant="10" id="aXF-oX-hBV"/>
+                            <constraint firstItem="jcc-iS-GOG" firstAttribute="centerY" secondItem="urT-gt-1s5" secondAttribute="centerY" id="kbS-qg-V9g"/>
+                            <constraint firstItem="OKa-Ft-NDk" firstAttribute="top" secondItem="e4M-Iv-kbp" secondAttribute="bottom" constant="10" id="zox-aV-ntH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2hh-wa-TLV" secondAttribute="bottom" constant="5" id="HCu-hK-cNQ"/>
+                    <constraint firstAttribute="trailing" secondItem="2hh-wa-TLV" secondAttribute="trailing" constant="5" id="eCA-SJ-0aE"/>
+                    <constraint firstItem="2hh-wa-TLV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="tKN-MC-QiD"/>
+                    <constraint firstItem="2hh-wa-TLV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wQf-rv-8Yp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="averageMovie" destination="urT-gt-1s5" id="phO-oE-dph"/>
+                <outlet property="cellView" destination="2hh-wa-TLV" id="MoF-kS-Jdu"/>
+                <outlet property="genreOfMovie" destination="IGH-yj-dt5" id="K1y-g8-Mdq"/>
+                <outlet property="imageMovie" destination="e4M-Iv-kbp" id="DUG-0f-XF8"/>
+                <outlet property="titleMovie" destination="OKa-Ft-NDk" id="WdR-Mu-Ame"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="162.72321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noMovieImg" width="760" height="428"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
